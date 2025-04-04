@@ -1,12 +1,36 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from "react";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Approach from "@/components/Approach";
+import Expertise from "@/components/Expertise";
+import Team from "@/components/Team";
+import ContactForm from "@/components/ContactForm";
+import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
+import { initScrollAnimation } from "@/utils/scrollAnimation";
 
 const Index = () => {
+  useEffect(() => {
+    // Initialize scroll animations
+    const cleanup = initScrollAnimation();
+    
+    // Clean up event listener on component unmount
+    return cleanup;
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Navbar />
+      <Hero />
+      <Services />
+      <Approach />
+      <Expertise />
+      <Team />
+      <ContactForm />
+      <Footer />
+      <ScrollToTop />
     </div>
   );
 };
