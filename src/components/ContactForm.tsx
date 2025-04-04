@@ -194,7 +194,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-navy-800">Email</h4>
-                    <p className="text-gray-700">contact@execusearch.fr</p>
+                    <p className="text-gray-700">contact@lykexecutive.com</p>
                   </div>
                 </div>
                 

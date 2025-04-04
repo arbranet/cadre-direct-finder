@@ -10,8 +10,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold text-white mb-4">
-              <span className="text-white">Execu</span>
-              <span className="text-blue-400">Search</span>
+              <span className="text-white">Lyk</span>
+              <span className="text-blue-400">Executive</span>
             </h3>
             <p className="mb-4">
               Cabinet de recrutement spécialisé dans l'approche directe de cadres et dirigeants, partenaire de votre croissance.
@@ -71,13 +71,13 @@ const Footer = () => {
               <p className="mb-2">123 Avenue des Champs-Élysées</p>
               <p className="mb-2">75008 Paris, France</p>
               <p className="mb-2">Tel: +33 (0)1 23 45 67 89</p>
-              <p>Email: contact@execusearch.fr</p>
+              <p>Email: contact@lykexecutive.com</p>
             </address>
           </div>
         </div>
         
         <div className="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {currentYear} ExecuSearch. Tous droits réservés.</p>
+          <p>&copy; {currentYear} Lyk Executive. Tous droits réservés.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Confidentialité</a>
             <a href="#" className="hover:text-white transition-colors">Mentions légales</a>

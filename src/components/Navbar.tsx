@@ -27,8 +27,8 @@ const Navbar = () => {
       <div className="container px-4 mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <a href="/" className="text-2xl font-bold text-navy-800">
-            <span className="text-navy-800">Execu</span>
-            <span className="text-blue-600">Search</span>
+            <span className="text-navy-800">Lyk</span>
+            <span className="text-blue-600">Executive</span>
           </a>
         </div>
 
