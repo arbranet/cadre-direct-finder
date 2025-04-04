@@ -43,9 +43,6 @@ const Navbar = () => {
           <a href="#expertise" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
             Expertise
           </a>
-          <a href="#team" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
-            Notre Équipe
-          </a>
           <Button 
             asChild 
             variant="default" 
@@ -85,13 +82,6 @@ const Navbar = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Expertise
-            </a>
-            <a 
-              href="#team" 
-              className="text-navy-800 hover:text-blue-600 transition-colors py-2 font-medium"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Notre Équipe
             </a>
             <Button 
               asChild 

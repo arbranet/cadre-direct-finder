@@ -5,7 +5,6 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Approach from "@/components/Approach";
 import Expertise from "@/components/Expertise";
-import Team from "@/components/Team";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -27,7 +26,6 @@ const Index = () => {
       <Services />
       <Approach />
       <Expertise />
-      <Team />
       <ContactForm />
       <Footer />
       <ScrollToTop />
