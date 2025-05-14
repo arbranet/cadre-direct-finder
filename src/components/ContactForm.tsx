@@ -210,6 +210,29 @@ const ContactForm = () => {
                     </p>
                   </div>
                 </div>
+
+                <div className="flex items-start">
+                  <div className="bg-blue-100 p-3 rounded-full mr-4">
+                    <img 
+                      src="https://cdn-icons-png.flaticon.com/256/174/174857.png" 
+                      alt="LinkedIn" 
+                      className="w-5 h-5"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-navy-800">LinkedIn</h4>
+                    <p className="text-gray-700">
+                      <a 
+                        href="https://www.linkedin.com/in/priscilla-lesyk" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:text-blue-800 transition-colors"
+                      >
+                        Priscilla Lesyk
+                      </a>
+                    </p>
+                  </div>
+                </div>
               </div>
               
               <div className="mt-10">

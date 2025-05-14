@@ -1,5 +1,4 @@
-
-import { Facebook, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Twitter } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -24,7 +23,11 @@ const Footer = () => {
                 <Twitter size={20} />
               </a>
               <a href="https://www.linkedin.com/in/priscilla-lesyk" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
-                <Linkedin size={20} />
+                <img 
+                  src="https://cdn-icons-png.flaticon.com/256/174/174857.png" 
+                  alt="LinkedIn" 
+                  className="w-5 h-5"
+                />
               </a>
             </div>
           </div>

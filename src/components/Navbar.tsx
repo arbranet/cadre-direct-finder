@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Menu, X, Linkedin } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -34,7 +34,11 @@ const Navbar = () => {
             className="text-navy-800 hover:text-blue-600 transition-colors" 
             aria-label="LinkedIn"
           >
-            <Linkedin size={20} />
+            <img 
+              src="https://cdn-icons-png.flaticon.com/256/174/174857.png" 
+              alt="LinkedIn" 
+              className="w-5 h-5"
+            />
           </a>
           <Button 
             asChild 
@@ -84,7 +88,11 @@ const Navbar = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               <div className="flex items-center">
-                <Linkedin size={20} className="mr-2" />
+                <img 
+                  src="https://cdn-icons-png.flaticon.com/256/174/174857.png" 
+                  alt="LinkedIn" 
+                  className="w-5 h-5 mr-2"
+                />
                 <span>LinkedIn</span>
               </div>
             </a>
