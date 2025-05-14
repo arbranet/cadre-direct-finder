@@ -1,5 +1,6 @@
 
 import { Building } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 const industries = [
   {
@@ -39,17 +40,75 @@ const industries = [
   }
 ];
 
+// List of positions to display with their categories
+const positions = [
+  { name: "Direction des ressources humaines", category: "Support" },
+  { name: "Direction financière", category: "Support" },
+  { name: "M&A", category: "Support" },
+  { name: "Direction juridique", category: "Support" },
+  { name: "Direction commerciale", category: "Business" },
+  { name: "Directeur marketing et Digital", category: "Business" },
+  { name: "Directeur communication", category: "Business" },
+  { name: "Direction achats", category: "Operations" },
+  { name: "DSI", category: "Operations" },
+  { name: "Direction supply chain", category: "Operations" },
+  { name: "Direction technique", category: "Operations" },
+];
+
 const Expertise = () => {
   return (
     <section id="expertise" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-4xl mx-auto mb-16">
+        <div className="text-center max-w-5xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-4">Nos Secteurs d'Expertise</h2>
           <p className="text-lg text-gray-600">
             Nous sommes spécialisés dans le recrutement de cadres et dirigeants, tant sur des fonctions supports et que des fonctions métiers.
-            Direction des ressources humaines, Direction financière, M&A, Direction juridique, Direction commerciale, Directeur marketing et Digital,
-            Directeur communication, Direction achats, DSI, Direction supply chain, Direction technique.
           </p>
+          
+          {/* New position display as cards with categories */}
+          <div className="mt-8 mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <Card className="bg-blue-50/50 border border-blue-100">
+                <CardContent className="p-6">
+                  <h3 className="font-semibold text-lg text-blue-700 mb-3">Fonctions Support</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {positions.filter(p => p.category === "Support").map((position, idx) => (
+                      <span key={idx} className="bg-white px-3 py-1 rounded-full text-navy-800 text-sm border border-blue-100 shadow-sm">
+                        {position.name}
+                      </span>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-green-50/50 border border-green-100">
+                <CardContent className="p-6">
+                  <h3 className="font-semibold text-lg text-green-700 mb-3">Fonctions Business</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {positions.filter(p => p.category === "Business").map((position, idx) => (
+                      <span key={idx} className="bg-white px-3 py-1 rounded-full text-navy-800 text-sm border border-green-100 shadow-sm">
+                        {position.name}
+                      </span>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-amber-50/50 border border-amber-100">
+                <CardContent className="p-6">
+                  <h3 className="font-semibold text-lg text-amber-700 mb-3">Fonctions Opérationnelles</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {positions.filter(p => p.category === "Operations").map((position, idx) => (
+                      <span key={idx} className="bg-white px-3 py-1 rounded-full text-navy-800 text-sm border border-amber-100 shadow-sm">
+                        {position.name}
+                      </span>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+          
           <p className="text-lg text-gray-600 mt-4">
             Nous intervenons dans les secteurs suivants avec une connaissance approfondie des enjeux :
           </p>
