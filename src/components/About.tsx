@@ -49,7 +49,7 @@ const About = () => {
           {/* Founder's Text Column */}
           <div className="lg:col-span-2">
             <p className="text-gray-700 mb-6">
-              Avec 25 ans d'expérience dans la recherche et la sélection de cadres et dirigeants, j'accompagne Groupes, PME et ETI 
+              Avec plus de 25 ans d'expérience dans la recherche et la sélection de cadres et dirigeants, j'accompagne Groupes, PME et ETI 
               de la définition de leurs besoins de recrutement jusqu'à l'intégration réussie de leurs nouveaux talents. 
               Mon approche, fondée sur le pragmatisme et la transparence, s'appuie sur :
             </p>
@@ -68,7 +68,7 @@ const About = () => {
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                 </div>
                 <p className="text-gray-700">
-                  <strong className="text-navy-800">Une chasse de talents sur-mesure</strong>, grâce à un réseau national et international et à des méthodes de sourcing direct éprouvées.
+                  <strong className="text-navy-800">Une chasse de talents sur-mesure</strong>, grâce à un réseau national et des méthodes de sourcing direct éprouvées.
                 </p>
               </li>
               <li className="flex items-start">
@@ -76,7 +76,7 @@ const About = () => {
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                 </div>
                 <p className="text-gray-700">
-                  <strong className="text-navy-800">Une sélection rigoureuse</strong>, via des entretiens structurés, des tests comportementaux et une évaluation fine de la motivation et du leadership.
+                  <strong className="text-navy-800">Une sélection rigoureuse</strong>, via des entretiens structurés, des assessment online en vue d'une évaluation fine de la motivation et du leadership et des prises de références professionnelles.
                 </p>
               </li>
               <li className="flex items-start">
