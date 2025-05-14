@@ -1,55 +1,23 @@
 
 import React from "react";
-import { 
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious
-} from "@/components/ui/carousel";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/components/ScrollToTop";
 
 const LegalNotices = () => {
-  // Professional images for the carousel
-  const professionalImages = [
-    "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-    "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-    "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
-  ];
-
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
+      
+      {/* Full-width colored band with contrasting text */}
+      <div className="w-full bg-navy-800 py-20">
+        <div className="container mx-auto px-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white text-center">Mentions légales</h1>
+        </div>
+      </div>
+      
       <main className="flex-grow container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
-          {/* Visual slider with 3 professional photos */}
-          <div className="mb-10">
-            <Carousel className="w-full max-w-4xl mx-auto">
-              <CarouselContent>
-                {professionalImages.map((image, index) => (
-                  <CarouselItem key={index}>
-                    <div className="p-1">
-                      <AspectRatio ratio={16 / 9}>
-                        <img 
-                          src={image} 
-                          alt={`Professional environment ${index + 1}`}
-                          className="rounded-lg object-cover w-full h-full"
-                        />
-                      </AspectRatio>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="left-2" />
-              <CarouselNext className="right-2" />
-            </Carousel>
-          </div>
-
-          <h1 className="text-3xl font-bold text-navy-800 mb-8">Mentions légales</h1>
-
           <section className="mb-8">
             <h2 className="text-xl font-semibold text-navy-800 mb-3">Informations éditeur</h2>
             <p className="mb-3">
