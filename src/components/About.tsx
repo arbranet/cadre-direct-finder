@@ -8,7 +8,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-4 animate-on-scroll">
-            À Propos
+            Priscilla Lesyk : 25 ans d'excellence en recrutement de cadres et dirigeants
           </h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
         </div>
