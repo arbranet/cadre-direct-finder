@@ -73,7 +73,7 @@ const Footer = () => {
               <p className="mb-2">Lyk Executive</p>
               <p className="mb-2">Tel: <a href="tel:0627851057" className="hover:text-white transition-colors">06.27.85.10.57</a></p>
               <p className="mb-2">Email: contact@lykexecutive.com</p>
-              <p className="mb-2">Site: <a href="https://lykexecutive.com" className="text-blue-400 hover:text-blue-300">lykexecutive.com</a></p>
+              <p className="mb-2">Site: <a href="http://lykexecutive.com" className="text-blue-400 hover:text-blue-300">lykexecutive.com</a></p>
               <p className="mb-2">LinkedIn: <a href="https://www.linkedin.com/in/priscilla-lesyk" className="text-blue-400 hover:text-blue-300">Priscilla Lesyk</a></p>
               <p>SIRET: 91444231400011</p>
             </address>

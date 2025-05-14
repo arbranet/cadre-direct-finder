@@ -210,7 +210,7 @@ const ContactForm = () => {
                     <h4 className="font-semibold text-navy-800">Site Web</h4>
                     <p className="text-gray-700">
                       <a 
-                        href="https://lykexecutive.com" 
+                        href="http://lykexecutive.com" 
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:text-blue-800 transition-colors"
