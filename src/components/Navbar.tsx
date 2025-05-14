@@ -31,11 +31,18 @@ const Navbar = () => {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-2">
       <div className="container px-4 mx-auto flex items-center justify-between">
         <div className="flex items-center">
-          <Link to="/" className="text-2xl font-bold text-navy-800">
+          <Link to="/" className="text-2xl font-bold text-navy-800" onClick={scrollToTop}>
             <span className="text-navy-800">Lyk</span>
             <span className="text-blue-600">Executive</span>
           </Link>
