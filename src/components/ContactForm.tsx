@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Send, CheckCircle } from "lucide-react";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -184,7 +184,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-navy-800">Téléphone</h4>
-                    <p className="text-gray-700">+33 (0)1 23 45 67 89</p>
+                    <p className="text-gray-700">06.27.85.10.57</p>
                   </div>
                 </div>
                 
@@ -205,8 +205,8 @@ const ContactForm = () => {
                   <div>
                     <h4 className="font-semibold text-navy-800">Adresse</h4>
                     <p className="text-gray-700">
-                      123 Avenue des Champs-Élysées<br />
-                      75008 Paris, France
+                      13 RUE DES ARQUEIRONS<br />
+                      13500 CARRO MARTIGUES
                     </p>
                   </div>
                 </div>
