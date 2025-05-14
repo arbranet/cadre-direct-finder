@@ -66,6 +66,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
             <address className="not-italic">
+              <p className="mb-2">Lyk Executive</p>
               <p className="mb-2">13 RUE DES ARQUEIRONS</p>
               <p className="mb-2">13500 CARRO MARTIGUES</p>
               <p className="mb-2">Tel: 06.27.85.10.57</p>

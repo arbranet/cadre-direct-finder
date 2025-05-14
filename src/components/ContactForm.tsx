@@ -205,6 +205,7 @@ const ContactForm = () => {
                   <div>
                     <h4 className="font-semibold text-navy-800">Adresse</h4>
                     <p className="text-gray-700">
+                      Lyk Executive<br />
                       13 RUE DES ARQUEIRONS<br />
                       13500 CARRO MARTIGUES
                     </p>
