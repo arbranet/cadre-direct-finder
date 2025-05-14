@@ -6,13 +6,13 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 const LegalNotices = () => {
   return (
-    <div className="min-h-screen flex flex-col" id="top">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       
       {/* Full-width colored band with contrasting text */}
       <div className="w-full bg-navy-800 py-20 flex items-center justify-center">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-white text-center">Mentions légales</h1>
+          <h1 id="top" className="text-4xl md:text-5xl font-bold text-white text-center">Mentions légales</h1>
         </div>
       </div>
       
