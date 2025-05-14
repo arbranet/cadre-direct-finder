@@ -1,11 +1,11 @@
 
-import { Building } from "lucide-react";
+import { Building, Construction, Factory, Briefcase, Leaf, LightbulbIcon, Computer } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const industries = [
   {
     name: "BTP et Ingénierie",
-    icon: Building,
+    icon: Construction,
     roles: ["Directeurs d'agences", "Directeurs techniques, directeurs équipements, Directeurs travaux", "Directeurs projets"]
   },
   {
@@ -15,27 +15,27 @@ const industries = [
   },
   {
     name: "Industrie",
-    icon: Building,
+    icon: Factory,
     roles: ["Directeur de site, directeur de production", "Directeur des opérations", "Directeur logistique"]
   },
   {
     name: "Services à l'industrie",
-    icon: Building,
+    icon: Briefcase,
     roles: ["Directeur installations", "Directeur maintenance", "Directeur exploitation"]
   },
   {
     name: "Environnement",
-    icon: Building,
+    icon: Leaf,
     roles: ["Directeur RSE", "Responsable Développement Durable", "Ingénieur environnement"]
   },
   {
     name: "Énergie",
-    icon: Building,
+    icon: LightbulbIcon,
     roles: ["Directeur de projets", "Responsable innovation", "Directeur business developpement"]
   },
   {
     name: "Technologies & Digital",
-    icon: Building,
+    icon: Computer,
     roles: ["Directeur Technique", "Chief Digital Officer", "VP Produit"]
   }
 ];
