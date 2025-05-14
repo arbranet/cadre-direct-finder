@@ -80,10 +80,8 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p>&copy; {currentYear} Lyk Executive. Tous droits réservés.</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          <div className="mt-4 md:mt-0">
             <Link to="/mentions-legales" className="hover:text-white transition-colors">Mentions légales</Link>
-            <a href="#" className="hover:text-white transition-colors">Politique de confidentialité</a>
-            <a href="#" className="hover:text-white transition-colors">Cookies</a>
           </div>
         </div>
       </div>
