@@ -62,10 +62,10 @@ const Approach = () => {
               <img 
                 src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
                 alt="Approche directe" 
-                className="rounded-lg shadow-xl w-full object-cover h-[400px]"
+                className="rounded-lg shadow-xl w-full object-cover h-[800px]"
               />
             </div>
-            <div className="absolute top-10 -right-5 -z-10 w-full h-[400px] bg-blue-600 rounded-lg" />
+            <div className="absolute top-10 -right-5 -z-10 w-full h-[800px] bg-blue-600 rounded-lg" />
           </div>
         </div>
       </div>
