@@ -21,14 +21,14 @@ const Navbar = () => {
           <a href="#services" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
             Services
           </a>
+          <a href="#approach" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
+            Notre Approche
+          </a>
           <a href="#expertise" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
             Expertise
           </a>
           <a href="#about" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
             À Propos
-          </a>
-          <a href="#approach" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
-            Notre Approche
           </a>
           <a 
             href="https://www.linkedin.com/in/priscilla-lesyk" 
@@ -70,6 +70,13 @@ const Navbar = () => {
               Services
             </a>
             <a 
+              href="#approach" 
+              className="text-navy-800 hover:text-blue-600 transition-colors py-2 font-medium"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Notre Approche
+            </a>
+            <a 
               href="#expertise" 
               className="text-navy-800 hover:text-blue-600 transition-colors py-2 font-medium"
               onClick={() => setMobileMenuOpen(false)}
@@ -82,13 +89,6 @@ const Navbar = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               À Propos
-            </a>
-            <a 
-              href="#approach" 
-              className="text-navy-800 hover:text-blue-600 transition-colors py-2 font-medium"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Notre Approche
             </a>
             <a 
               href="https://www.linkedin.com/in/priscilla-lesyk"
