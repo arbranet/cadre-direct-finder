@@ -1,4 +1,5 @@
-import { Facebook, Twitter } from "lucide-react";
+
+import React from "react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,12 +17,6 @@ const Footer = () => {
               Cabinet de recrutement spécialisé dans l'approche directe de cadres et dirigeants, partenaire de votre croissance.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
-                <Twitter size={20} />
-              </a>
               <a href="https://www.linkedin.com/in/priscilla-lesyk" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
                 <img 
                   src="https://cdn-icons-png.flaticon.com/256/174/174857.png" 
