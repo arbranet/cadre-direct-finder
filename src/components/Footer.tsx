@@ -5,6 +5,11 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
+  const handleLegalClick = (e: React.MouseEvent) => {
+    // Naviguer vers la page des mentions légales
+    // Le composant ScrollToTop s'occupera de défiler vers le haut
+  };
+  
   return (
     <footer className="bg-navy-950 text-gray-300">
       <div className="container mx-auto px-4 py-16">
@@ -83,7 +88,16 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p>&copy; {currentYear} Lyk Executive. Tous droits réservés.</p>
           <div className="mt-4 md:mt-0">
-            <Link to="/mentions-legales#top" className="hover:text-white transition-colors">Mentions légales</Link>
+            <Link 
+              to="/mentions-legales" 
+              className="hover:text-white transition-colors"
+              onClick={() => {
+                // Force scroll to top after navigation
+                window.scrollTo(0, 0);
+              }}
+            >
+              Mentions légales
+            </Link>
           </div>
         </div>
       </div>
