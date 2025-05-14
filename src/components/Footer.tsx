@@ -32,16 +32,16 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#services" className="hover:text-white transition-colors">Recrutement par Approche Directe</a>
+                <a href="/#services" className="hover:text-white transition-colors">Recrutement par Approche Directe</a>
               </li>
               <li>
-                <a href="#services" className="hover:text-white transition-colors">Évaluation de Cadres</a>
+                <a href="/#services" className="hover:text-white transition-colors">Évaluation de Cadres</a>
               </li>
               <li>
-                <a href="#services" className="hover:text-white transition-colors">Conseil en Organisation</a>
+                <a href="/#services" className="hover:text-white transition-colors">Conseil en Organisation</a>
               </li>
               <li>
-                <a href="#services" className="hover:text-white transition-colors">Audit de Rémunération</a>
+                <a href="/#services" className="hover:text-white transition-colors">Audit de Rémunération</a>
               </li>
             </ul>
           </div>
@@ -50,19 +50,19 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Secteurs</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#expertise" className="hover:text-white transition-colors">BTP et Ingénierie</a>
+                <a href="/#expertise" className="hover:text-white transition-colors">BTP et Ingénierie</a>
               </li>
               <li>
-                <a href="#expertise" className="hover:text-white transition-colors">Promotion immobilière</a>
+                <a href="/#expertise" className="hover:text-white transition-colors">Promotion immobilière</a>
               </li>
               <li>
-                <a href="#expertise" className="hover:text-white transition-colors">Industrie</a>
+                <a href="/#expertise" className="hover:text-white transition-colors">Industrie</a>
               </li>
               <li>
-                <a href="#expertise" className="hover:text-white transition-colors">Services à l'industrie</a>
+                <a href="/#expertise" className="hover:text-white transition-colors">Services à l'industrie</a>
               </li>
               <li>
-                <a href="#expertise" className="hover:text-white transition-colors">Énergie et Environnement</a>
+                <a href="/#expertise" className="hover:text-white transition-colors">Énergie et Environnement</a>
               </li>
             </ul>
           </div>
@@ -72,7 +72,7 @@ const Footer = () => {
             <address className="not-italic">
               <p className="mb-2">Lyk Executive</p>
               <p className="mb-2">Tel: <a href="tel:0627851057" className="hover:text-white transition-colors">06.27.85.10.57</a></p>
-              <p className="mb-2">Email: contact@lykexecutive.com</p>
+              <p className="mb-2">Email: <a href="mailto:contact@lykexecutive.com" className="hover:text-white transition-colors">contact@lykexecutive.com</a></p>
               <p className="mb-2">Site: <a href="http://lykexecutive.com" className="text-blue-400 hover:text-blue-300">lykexecutive.com</a></p>
               <p className="mb-2">LinkedIn: <a href="https://www.linkedin.com/in/priscilla-lesyk" className="text-blue-400 hover:text-blue-300">Priscilla Lesyk</a></p>
               <p>SIRET: 91444231400011</p>

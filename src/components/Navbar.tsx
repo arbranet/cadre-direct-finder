@@ -18,16 +18,16 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#services" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
+          <a href="/#services" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
             Services
           </a>
-          <a href="#approach" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
+          <a href="/#approach" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
             Notre Approche
           </a>
-          <a href="#expertise" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
+          <a href="/#expertise" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
             Expertise
           </a>
-          <a href="#about" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
+          <a href="/#about" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
             À Propos
           </a>
           <a 
@@ -48,7 +48,7 @@ const Navbar = () => {
             variant="default" 
             className="bg-blue-600 hover:bg-blue-700 text-white"
           >
-            <a href="#contact">Nous Contacter</a>
+            <a href="/#contact">Nous Contacter</a>
           </Button>
         </nav>
 
@@ -63,28 +63,28 @@ const Navbar = () => {
         <div className="md:hidden bg-white py-4 px-4 shadow-lg">
           <nav className="flex flex-col space-y-4">
             <a 
-              href="#services" 
+              href="/#services" 
               className="text-navy-800 hover:text-blue-600 transition-colors py-2 font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
               Services
             </a>
             <a 
-              href="#approach" 
+              href="/#approach" 
               className="text-navy-800 hover:text-blue-600 transition-colors py-2 font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
               Notre Approche
             </a>
             <a 
-              href="#expertise" 
+              href="/#expertise" 
               className="text-navy-800 hover:text-blue-600 transition-colors py-2 font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
               Expertise
             </a>
             <a 
-              href="#about" 
+              href="/#about" 
               className="text-navy-800 hover:text-blue-600 transition-colors py-2 font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -112,7 +112,7 @@ const Navbar = () => {
               className="bg-blue-600 hover:bg-blue-700 text-white w-full"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <a href="#contact">Nous Contacter</a>
+              <a href="/#contact">Nous Contacter</a>
             </Button>
           </nav>
         </div>

@@ -198,7 +198,11 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-navy-800">Email</h4>
-                    <p className="text-gray-700">contact@lykexecutive.com</p>
+                    <p className="text-gray-700">
+                      <a href="mailto:contact@lykexecutive.com" className="text-blue-600 hover:text-blue-800 transition-colors">
+                        contact@lykexecutive.com
+                      </a>
+                    </p>
                   </div>
                 </div>
                 
