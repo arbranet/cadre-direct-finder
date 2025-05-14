@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import About from "@/components/About"; // Added import for About component
 import Approach from "@/components/Approach";
 import Expertise from "@/components/Expertise";
 import ContactForm from "@/components/ContactForm";
@@ -24,6 +25,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Services />
+      <About /> {/* Added About component */}
       <Approach />
       <Expertise />
       <ContactForm />
