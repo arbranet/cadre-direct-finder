@@ -235,20 +235,6 @@ const ContactForm = () => {
                   </div>
                 </div>
               </div>
-              
-              <div className="mt-10">
-                <h4 className="font-semibold text-navy-800 mb-3">Horaires d'ouverture</h4>
-                <ul className="space-y-2 text-gray-700">
-                  <li className="flex justify-between">
-                    <span>Lundi - Vendredi:</span>
-                    <span>9h00 - 18h00</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span>Samedi - Dimanche:</span>
-                    <span>Fermé</span>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>

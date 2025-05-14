@@ -3,11 +3,6 @@ import { Building } from "lucide-react";
 
 const industries = [
   {
-    name: "Finance & Banque",
-    icon: Building,
-    roles: ["Directeur Financier", "Directeur des Investissements", "Responsable Conformité"]
-  },
-  {
     name: "Technologies & Digital",
     icon: Building,
     roles: ["Directeur Technique", "Chief Digital Officer", "VP Produit"]
@@ -18,9 +13,24 @@ const industries = [
     roles: ["Directeur des Opérations", "Directeur de Site", "Directeur Supply Chain"]
   },
   {
-    name: "Santé & Pharmaceutique",
+    name: "BTP",
     icon: Building,
-    roles: ["Directeur R&D", "Directeur Médical", "Directeur Affaires Réglementaires"]
+    roles: ["Directeur de Travaux", "Directeur Technique", "Responsable de Projets"]
+  },
+  {
+    name: "Immobilier",
+    icon: Building,
+    roles: ["Directeur du Développement", "Asset Manager", "Responsable de Programmes"]
+  },
+  {
+    name: "Environnement",
+    icon: Building,
+    roles: ["Directeur RSE", "Responsable Développement Durable", "Ingénieur Environnement"]
+  },
+  {
+    name: "Énergie",
+    icon: Building,
+    roles: ["Directeur de Projets", "Responsable Innovation", "Directeur Commercial"]
   },
   {
     name: "Distribution & Grande Consommation",
