@@ -184,7 +184,11 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-navy-800">Téléphone</h4>
-                    <p className="text-gray-700">06.27.85.10.57</p>
+                    <p className="text-gray-700">
+                      <a href="tel:0627851057" className="text-blue-600 hover:text-blue-800 transition-colors">
+                        06.27.85.10.57
+                      </a>
+                    </p>
                   </div>
                 </div>
                 
