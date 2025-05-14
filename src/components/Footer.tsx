@@ -59,6 +59,9 @@ const Footer = () => {
                 <a href="#expertise" className="hover:text-white transition-colors">Industrie</a>
               </li>
               <li>
+                <a href="#expertise" className="hover:text-white transition-colors">Services à l'industrie</a>
+              </li>
+              <li>
                 <a href="#expertise" className="hover:text-white transition-colors">Énergie et Environnement</a>
               </li>
             </ul>
