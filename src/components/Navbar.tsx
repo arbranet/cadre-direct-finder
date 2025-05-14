@@ -1,7 +1,7 @@
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Linkedin } from "lucide-react";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -26,6 +26,15 @@ const Navbar = () => {
           </a>
           <a href="#expertise" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
             Expertise
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/priscilla-lesyk" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-navy-800 hover:text-blue-600 transition-colors" 
+            aria-label="LinkedIn"
+          >
+            <Linkedin size={20} />
           </a>
           <Button 
             asChild 
@@ -66,6 +75,18 @@ const Navbar = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Expertise
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/priscilla-lesyk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-navy-800 hover:text-blue-600 transition-colors py-2 font-medium"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <div className="flex items-center">
+                <Linkedin size={20} className="mr-2" />
+                <span>LinkedIn</span>
+              </div>
             </a>
             <Button 
               asChild 

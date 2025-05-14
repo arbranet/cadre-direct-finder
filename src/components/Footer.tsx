@@ -23,7 +23,7 @@ const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/priscilla-lesyk" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -72,6 +72,7 @@ const Footer = () => {
               <p className="mb-2">13500 CARRO MARTIGUES</p>
               <p className="mb-2">Tel: 06.27.85.10.57</p>
               <p className="mb-2">Email: contact@lykexecutive.com</p>
+              <p className="mb-2">LinkedIn: <a href="https://www.linkedin.com/in/priscilla-lesyk" className="text-blue-400 hover:text-blue-300">Priscilla Lesyk</a></p>
               <p>SIRET: 91444231400011</p>
             </address>
           </div>
