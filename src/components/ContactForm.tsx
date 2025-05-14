@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, MapPin, Send, CheckCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Send, CheckCircle, Link } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const ContactForm = () => {
@@ -200,14 +200,19 @@ const ContactForm = () => {
                 
                 <div className="flex items-start">
                   <div className="bg-blue-100 p-3 rounded-full mr-4">
-                    <MapPin className="text-blue-600 h-5 w-5" />
+                    <Link className="text-blue-600 h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-navy-800">Adresse</h4>
+                    <h4 className="font-semibold text-navy-800">Site Web</h4>
                     <p className="text-gray-700">
-                      Lyk Executive<br />
-                      13 RUE DES ARQUEIRONS<br />
-                      13500 CARRO MARTIGUES
+                      <a 
+                        href="https://lykexecutive.com" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:text-blue-800 transition-colors"
+                      >
+                        lykexecutive.com
+                      </a>
                     </p>
                   </div>
                 </div>

@@ -76,7 +76,7 @@ const About = () => {
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                 </div>
                 <p className="text-gray-700">
-                  <strong className="text-navy-800">Une sélection rigoureuse</strong>, via des entretiens structurés, des assessment online en vue d'une évaluation fine de la motivation et du leadership et des prises de références professionnelles.
+                  <strong className="text-navy-800">Une sélection rigoureuse</strong>, via des entretiens structurés, des assessments online en vue d'une évaluation fine de la motivation et du leadership et des prises de références professionnelles.
                 </p>
               </li>
               <li className="flex items-start">

@@ -61,7 +61,7 @@ const Expertise = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-5xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-4">Nos Secteurs d'Expertise</h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Nous sommes spécialisés dans le recrutement de cadres et dirigeants, tant sur des fonctions supports et que des fonctions métiers.
           </p>
           
