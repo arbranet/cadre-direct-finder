@@ -68,10 +68,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
             <address className="not-italic">
-              <p className="mb-2">123 Avenue des Champs-Élysées</p>
-              <p className="mb-2">75008 Paris, France</p>
-              <p className="mb-2">Tel: +33 (0)1 23 45 67 89</p>
-              <p>Email: contact@lykexecutive.com</p>
+              <p className="mb-2">13 RUE DES ARQUEIRONS</p>
+              <p className="mb-2">13500 CARRO MARTIGUES</p>
+              <p className="mb-2">Tel: 06.27.85.10.57</p>
+              <p className="mb-2">Email: contact@lykexecutive.com</p>
+              <p>SIRET: 91444231400011</p>
             </address>
           </div>
         </div>
