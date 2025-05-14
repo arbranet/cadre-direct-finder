@@ -2,34 +2,71 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  
+  const handleNavigation = (anchor: string) => {
+    // Ferme le menu mobile si ouvert
+    if (mobileMenuOpen) setMobileMenuOpen(false);
+    
+    // Si on est déjà sur la page d'accueil, on fait défiler jusqu'à l'ancre
+    if (window.location.pathname === '/') {
+      const element = document.getElementById(anchor);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Sinon, on navigue vers la page d'accueil puis on fait défiler
+      navigate('/', { replace: true });
+      // Attendre que la navigation soit terminée avant de faire défiler
+      setTimeout(() => {
+        const element = document.getElementById(anchor);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-2">
       <div className="container px-4 mx-auto flex items-center justify-between">
         <div className="flex items-center">
-          <a href="/" className="text-2xl font-bold text-navy-800">
+          <Link to="/" className="text-2xl font-bold text-navy-800">
             <span className="text-navy-800">Lyk</span>
             <span className="text-blue-600">Executive</span>
-          </a>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="/#services" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
+          <button 
+            onClick={() => handleNavigation('services')} 
+            className="text-navy-800 hover:text-blue-600 transition-colors font-medium"
+          >
             Services
-          </a>
-          <a href="/#approach" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
+          </button>
+          <button 
+            onClick={() => handleNavigation('approach')} 
+            className="text-navy-800 hover:text-blue-600 transition-colors font-medium"
+          >
             Notre Approche
-          </a>
-          <a href="/#expertise" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
+          </button>
+          <button 
+            onClick={() => handleNavigation('expertise')} 
+            className="text-navy-800 hover:text-blue-600 transition-colors font-medium"
+          >
             Expertise
-          </a>
-          <a href="/#about" className="text-navy-800 hover:text-blue-600 transition-colors font-medium">
+          </button>
+          <button 
+            onClick={() => handleNavigation('about')} 
+            className="text-navy-800 hover:text-blue-600 transition-colors font-medium"
+          >
             À Propos
-          </a>
+          </button>
           <a 
             href="https://www.linkedin.com/in/priscilla-lesyk" 
             target="_blank" 
@@ -44,11 +81,11 @@ const Navbar = () => {
             />
           </a>
           <Button 
-            asChild 
+            onClick={() => handleNavigation('contact')}
             variant="default" 
             className="bg-blue-600 hover:bg-blue-700 text-white"
           >
-            <a href="/#contact">Nous Contacter</a>
+            Nous Contacter
           </Button>
         </nav>
 
@@ -62,40 +99,35 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white py-4 px-4 shadow-lg">
           <nav className="flex flex-col space-y-4">
-            <a 
-              href="/#services" 
+            <button 
+              onClick={() => handleNavigation('services')} 
               className="text-navy-800 hover:text-blue-600 transition-colors py-2 font-medium"
-              onClick={() => setMobileMenuOpen(false)}
             >
               Services
-            </a>
-            <a 
-              href="/#approach" 
+            </button>
+            <button 
+              onClick={() => handleNavigation('approach')} 
               className="text-navy-800 hover:text-blue-600 transition-colors py-2 font-medium"
-              onClick={() => setMobileMenuOpen(false)}
             >
               Notre Approche
-            </a>
-            <a 
-              href="/#expertise" 
+            </button>
+            <button 
+              onClick={() => handleNavigation('expertise')} 
               className="text-navy-800 hover:text-blue-600 transition-colors py-2 font-medium"
-              onClick={() => setMobileMenuOpen(false)}
             >
               Expertise
-            </a>
-            <a 
-              href="/#about" 
+            </button>
+            <button 
+              onClick={() => handleNavigation('about')} 
               className="text-navy-800 hover:text-blue-600 transition-colors py-2 font-medium"
-              onClick={() => setMobileMenuOpen(false)}
             >
               À Propos
-            </a>
+            </button>
             <a 
               href="https://www.linkedin.com/in/priscilla-lesyk"
               target="_blank"
               rel="noopener noreferrer"
               className="text-navy-800 hover:text-blue-600 transition-colors py-2 font-medium"
-              onClick={() => setMobileMenuOpen(false)}
             >
               <div className="flex items-center">
                 <img 
@@ -107,12 +139,11 @@ const Navbar = () => {
               </div>
             </a>
             <Button 
-              asChild 
+              onClick={() => handleNavigation('contact')}
               variant="default" 
               className="bg-blue-600 hover:bg-blue-700 text-white w-full"
-              onClick={() => setMobileMenuOpen(false)}
             >
-              <a href="/#contact">Nous Contacter</a>
+              Nous Contacter
             </Button>
           </nav>
         </div>

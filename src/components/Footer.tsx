@@ -1,13 +1,29 @@
 
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const navigate = useNavigate();
   
-  const handleLegalClick = (e: React.MouseEvent) => {
-    // Naviguer vers la page des mentions légales
-    // Le composant ScrollToTop s'occupera de défiler vers le haut
+  const handleNavigation = (anchor: string) => {
+    // Si on est déjà sur la page d'accueil, on fait défiler jusqu'à l'ancre
+    if (window.location.pathname === '/') {
+      const element = document.getElementById(anchor);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Sinon, on navigue vers la page d'accueil puis on fait défiler
+      navigate('/', { replace: true });
+      // Attendre que la navigation soit terminée avant de faire défiler
+      setTimeout(() => {
+        const element = document.getElementById(anchor);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
   };
   
   return (
@@ -37,16 +53,16 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/#services" className="hover:text-white transition-colors">Recrutement par Approche Directe</a>
+                <button onClick={() => handleNavigation('services')} className="hover:text-white transition-colors">Recrutement par Approche Directe</button>
               </li>
               <li>
-                <a href="/#services" className="hover:text-white transition-colors">Évaluation de Cadres</a>
+                <button onClick={() => handleNavigation('services')} className="hover:text-white transition-colors">Évaluation de Cadres</button>
               </li>
               <li>
-                <a href="/#services" className="hover:text-white transition-colors">Conseil en Organisation</a>
+                <button onClick={() => handleNavigation('services')} className="hover:text-white transition-colors">Conseil en Organisation</button>
               </li>
               <li>
-                <a href="/#services" className="hover:text-white transition-colors">Audit de Rémunération</a>
+                <button onClick={() => handleNavigation('services')} className="hover:text-white transition-colors">Audit de Rémunération</button>
               </li>
             </ul>
           </div>
@@ -55,19 +71,19 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Secteurs</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/#expertise" className="hover:text-white transition-colors">BTP et Ingénierie</a>
+                <button onClick={() => handleNavigation('expertise')} className="hover:text-white transition-colors">BTP et Ingénierie</button>
               </li>
               <li>
-                <a href="/#expertise" className="hover:text-white transition-colors">Promotion immobilière</a>
+                <button onClick={() => handleNavigation('expertise')} className="hover:text-white transition-colors">Promotion immobilière</button>
               </li>
               <li>
-                <a href="/#expertise" className="hover:text-white transition-colors">Industrie</a>
+                <button onClick={() => handleNavigation('expertise')} className="hover:text-white transition-colors">Industrie</button>
               </li>
               <li>
-                <a href="/#expertise" className="hover:text-white transition-colors">Services à l'industrie</a>
+                <button onClick={() => handleNavigation('expertise')} className="hover:text-white transition-colors">Services à l'industrie</button>
               </li>
               <li>
-                <a href="/#expertise" className="hover:text-white transition-colors">Énergie et Environnement</a>
+                <button onClick={() => handleNavigation('expertise')} className="hover:text-white transition-colors">Énergie et Environnement</button>
               </li>
             </ul>
           </div>
