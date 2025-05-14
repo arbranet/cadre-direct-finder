@@ -1,4 +1,3 @@
-
 import React from "react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -12,7 +11,7 @@ const LegalNotices = () => {
       {/* Full-width colored band with contrasting text */}
       <div className="w-full bg-navy-800 py-20 flex items-center justify-center">
         <div className="container mx-auto px-4">
-          <h1 id="top" className="text-4xl md:text-5xl font-bold text-white text-center">Mentions légales</h1>
+          <h1 id="top" className="text-4xl md:text-5xl font-bold text-white text-center pt-[30px]">Mentions légales</h1>
         </div>
       </div>
       
@@ -55,7 +54,7 @@ const LegalNotices = () => {
           <section className="mb-8">
             <h2 className="text-xl font-semibold text-navy-800 mb-3">Propriété intellectuelle</h2>
             <p className="mb-3">
-              L'ensemble des contenus (textes, images, éléments graphiques, logo, icônes, vidéos, sons, logiciels…) présents sur ce site est protégé par le droit d'auteur, le droit des marques et le droit des bases de données. Toute reproduction, représentation, distribution, modification, adaptation ou traduction, partielle ou intégrale, par quelque procédé que ce soit, est strictement interdite sans l'autorisation préalable écrite de LYK EXECUTIVE.
+              L'ensemble des contenus (textes, images, éléments graphiques, logo, icônes, vidéos, sons, logiciels…) présents sur ce site sont protégés par le droit d'auteur, le droit des marques et le droit des bases de données. Toute reproduction, représentation, distribution, modification, adaptation ou traduction, partielle ou intégrale, par quelque procédé que ce soit, est strictement interdite sans l'autorisation préalable écrite de LYK EXECUTIVE.
             </p>
           </section>
 
