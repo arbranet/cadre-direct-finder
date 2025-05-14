@@ -43,12 +43,14 @@ const Expertise = () => {
   return (
     <section id="expertise" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-4">Nos Secteurs d'Expertise</h2>
           <p className="text-lg text-gray-600">
             Nous sommes spécialisés dans le recrutement de cadres et dirigeants, tant sur des fonctions supports et que des fonctions métiers.
             Direction des ressources humaines, Direction financière, M&A, Direction juridique, direction commerciale, Directeur marketing et Digital,
             directeur communication Direction achats, DSI, Direction supply chain, Direction technique.
+          </p>
+          <p className="text-lg text-gray-600 mt-4">
             Nous intervenons dans les secteurs suivants avec une connaissance approfondie des enjeux :
           </p>
         </div>
