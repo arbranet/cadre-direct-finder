@@ -21,7 +21,7 @@ const services = [
   {
     icon: Award,
     title: "Accompagnement Complet",
-    description: "Suivi personnalisé tout au long du processus de recrutement jusqu'à l'intégration du candidat."
+    description: "Suivi personnalisé jusqu'à l'intégration du candidat et pendant toute la période d'essai."
   },
   {
     icon: TrendingUp,
