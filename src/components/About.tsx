@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import priscillaPortrait from "@/assets/portrait-priscilla-lesyk.webp.asset.json";
 
 const About = () => {
   return (
@@ -17,9 +18,10 @@ const About = () => {
           {/* Founder's Image Column */}
           <div className="flex flex-col items-center">
             <Avatar className="w-60 h-60 border-4 border-white shadow-lg mb-6">
-              <AvatarImage 
-                src="https://media.licdn.com/dms/image/v2/C4D03AQEIs4sPe0ka8A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1547736854977?e=1752710400&v=beta&t=JRxbe8RMkdaQBMZRGtYtvVg9mwcAtCN56SOJF72bTP4" 
-                alt="Priscilla Lesyk" 
+              <AvatarImage
+                src={priscillaPortrait.url}
+                alt="Priscilla Lesyk, fondatrice du cabinet de recrutement Lyk Executive"
+                loading="lazy"
               />
               <AvatarFallback>PL</AvatarFallback>
             </Avatar>
