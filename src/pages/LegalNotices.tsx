@@ -24,7 +24,7 @@ const LegalNotices = () => {
             </p>
             <ul className="list-disc pl-5 space-y-1">
               <li>Numéro SIREN : 914 442 314</li>
-              <li>Numéro SIRET (siège) : 914 442 314 00011</li>
+              <li>Numéro SIRET (siège) : 914 442 314 00037</li>
               <li>Numéro de TVA intracommunautaire : FR17 914442314</li>
               <li>Date de création : 02/06/2022</li>
               <li>Dirigeant et responsable de la publication : Priscilla Lesyk</li>
