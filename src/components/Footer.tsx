@@ -96,7 +96,7 @@ const Footer = () => {
               <p className="mb-2">Email: <a href="mailto:contact@lykexecutive.com" className="hover:text-white transition-colors">contact@lykexecutive.com</a></p>
               <p className="mb-2">Site: <a href="http://lykexecutive.com" className="text-blue-400 hover:text-blue-300">lykexecutive.com</a></p>
               <p className="mb-2">LinkedIn: <a href="https://www.linkedin.com/in/priscilla-lesyk" className="text-blue-400 hover:text-blue-300">Priscilla Lesyk</a></p>
-              <p>SIRET: 91444231400011</p>
+              <p>SIRET: 914 442 314 00037</p>
             </address>
           </div>
         </div>
