@@ -20,7 +20,7 @@ const LegalNotices = () => {
           <section className="mb-8">
             <h2 className="text-xl font-semibold text-navy-800 mb-3">Informations éditeur</h2>
             <p className="mb-3">
-              Le site https://lykexecutive.com est la propriété de la société LYK EXECUTIVE, SASU au capital de 1 000 €, immatriculée au Registre du Commerce et des Sociétés d'Aix-en-Provence sous le numéro 914 442 314 R.C.S., dont le siège social est situé au 13 Rue des Arqueirons, 13500 Martigues, France.
+              Le site https://lykexecutive.com est la propriété de la société LYK EXECUTIVE, SASU au capital de 1 000 €, immatriculée au Registre du Commerce et des Sociétés d'Aix-en-Provence sous le numéro 914 442 314 R.C.S., dont le siège social est situé au 409 Route du Barchat, 73720 Queige, France.
             </p>
             <ul className="list-disc pl-5 space-y-1">
               <li>Numéro SIREN : 914 442 314</li>
@@ -28,7 +28,6 @@ const LegalNotices = () => {
               <li>Numéro de TVA intracommunautaire : FR17 914442314</li>
               <li>Date de création : 02/06/2022</li>
               <li>Dirigeant et responsable de la publication : Priscilla Lesyk</li>
-              <li><a href="https://www.pappers.fr/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Pappers</a></li>
             </ul>
           </section>
 
@@ -38,8 +37,6 @@ const LegalNotices = () => {
             <ul className="list-disc pl-5 space-y-1">
               <li>Vercel Inc.</li>
               <li>440 N Barranca Ave #4133, Covina, CA 91723, États-Unis</li>
-              <li>Site : <a href="https://vercel.com" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://vercel.com</a></li>
-              <li><a href="https://dos.sunbiz.org/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Sunbiz</a></li>
             </ul>
           </section>
 
