@@ -1,6 +1,5 @@
 
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import priscillaPortrait from "@/assets/portrait-priscilla-lesyk.webp.asset.json";
 
 const About = () => {
@@ -17,14 +16,14 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center animate-on-scroll">
           {/* Founder's Image Column */}
           <div className="flex flex-col items-center">
-            <Avatar className="w-60 h-60 border-4 border-white shadow-lg mb-6">
-              <AvatarImage
+            <div className="w-60 h-72 border-4 border-white shadow-lg rounded-full overflow-hidden mb-6 bg-gray-100">
+              <img
                 src={priscillaPortrait.url}
                 alt="Priscilla Lesyk, fondatrice du cabinet de recrutement Lyk Executive"
                 loading="lazy"
+                className="w-full h-full object-cover"
               />
-              <AvatarFallback>PL</AvatarFallback>
-            </Avatar>
+            </div>
             <h3 className="text-xl font-semibold text-navy-800">Priscilla Lesyk</h3>
             <p className="text-blue-600">Fondatrice</p>
             <Button 
