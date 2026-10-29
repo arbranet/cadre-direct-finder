@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import priscillaPortrait from "@/assets/portrait-priscilla-lesyk.webp.asset.json";
+import priscillaPortrait from "@/assets/portrait-priscilla-lesyk.webp";
 
 const About = () => {
   return (
@@ -18,7 +18,7 @@ const About = () => {
           <div className="flex flex-col items-center">
             <div className="w-60 h-72 border-4 border-white shadow-lg rounded-full overflow-hidden mb-6 bg-gray-100">
               <img
-                src={priscillaPortrait.url}
+                src={priscillaPortrait}
                 alt="Priscilla Lesyk, fondatrice du cabinet de recrutement Lyk Executive"
                 loading="lazy"
                 className="w-full h-full object-cover"
