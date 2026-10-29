@@ -35,8 +35,8 @@ const LegalNotices = () => {
             <h2 className="text-xl font-semibold text-navy-800 mb-3">Hébergement</h2>
             <p className="mb-3">Le site est hébergé par :</p>
             <ul className="list-disc pl-5 space-y-1">
-              <li>Vercel Inc.</li>
-              <li>440 N Barranca Ave #4133, Covina, CA 91723, États-Unis</li>
+              <li>Netlify, Inc.</li>
+              <li>512 2nd Street, Suite 200, San Francisco, CA 94107, États-Unis</li>
             </ul>
           </section>
 
